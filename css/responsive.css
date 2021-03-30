@@ -1,0 +1,73 @@
+@media only screen and (max-width: 900px) {
+    .book,
+    .book-category,
+    .follow ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: rgb(250, 250, 250);
+    }
+    .navbar {
+        display: none;
+    }
+    .burger {
+        position: sticky;
+        top: 12px;
+        left: 7px;
+    }
+    .burger .line {
+        margin: 2px;
+        width: 29px;
+        height: 5px;
+        background-color: rgb(235, 125, 125);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header1 {
+        margin: auto;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .inputs,
+    #logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup .inputs .input {
+        width: 100%;
+    }
+    .choose-book h1 {
+        display: flex;
+        margin: auto;
+        width: auto;
+    }
+    .follow ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .social-media {
+        position: relative;
+        top: 60px;
+        left: 120px;
+    }
+    .copyrigth {
+        margin: auto;
+    }
+}

@@ -1,0 +1,26 @@
+git -a -m                                         used to direct commit the folders skipped the stagging area.
+git rm -rf .git	               used to clear the init command from the following folder.
+git commit -m "comment"	used to commit all files from stage to working tree.
+git add -A	                                     used to add all the files in one time.
+git diff                                             used to show the last modefied code in the document
+git status                                         used to check the modification status
+git chechout     	
+git rm --cached                               used to delete the file from commit area.
+git rm                                               used to removed the file form the HARD DISK.
+git log                                         	 used to watch all the recent activity.
+git log -p -4         		 used to watch last four recent activity.
+git branch                                        used to switch branches from (master) to created branches\
+git checkout master                      used to switch into master branch.
+git chechout part1   		 used to switched into part1 Branch.
+  	(Part1 is a brach which is created by user)
+git merge part1		used to megre with master branch.
+git branch -b flasknew	used to create and switched into new created branch.
+git clone "url" "folder name"    	used to clone any Repository on the git HUb.
+git remote set-url 		used to set the urls local as remote.
+
+               steps to create the remote directory
+  1.$ git add -A
+2. $ git commit -m "comment"
+3. $ git status
+4 $ git remote set-url origin 'url'  (paste the url where you want to push the repositrary at the place of 2nd url without quote)
+4. $ git push -u origin master.

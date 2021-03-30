@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Public+Sans:ital@1&family=Roboto+Slab&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    width: 8%;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    margin: auto;
+    background-color: rgb(235, 230, 230);
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+header .div1 {
+    padding: 6px;
+    width: 50%;
+}
+
+header .div2 {
+    width: 50%;
+    display: flex;
+    padding-right: 15px;
+    flex-direction: row-reverse;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: rgb(235, 125, 125);
+    justify-content: center;
+    font-size: 22px;
+}
+
+#logo img {
+    padding: 5px;
+    margin: 6px;
+    height: 62px;
+    width: 170px;
+    filter: invert(1);
+}
+
+#logo ul li {
+    font-family: 'Roboto Slab', serif;
+    margin: 6px;
+    padding: 0px;
+    list-style: none;
+}
+
+marquee {
+    border: 2px solid rgb(12, 12, 12);
+}
+
+marquee a:hover {
+    color: black;
+}
+
+header .div2 a {
+    padding: 6px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+header .div2 a:hover {
+    color: brown;
+}
+
+.navbar {
+    cursor: pointer;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    padding: 2px;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0px 2px rgb(224, 214, 214);
+}
+
+.navbar ul {
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navbar ul li ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.navbar ul li ul li {
+    text-align: left;
+    display: none;
+    background-color: rgb(126, 121, 121);
+    color: #797979;
+    border-bottom: 2px solid grey;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    border-bottom: 2px solid rgb(212, 48, 48);
+    padding: 0.20rem;
+    color: rgb(235, 20, 20);
+}
+
+.navbar ul li ul a:hover {
+    color: white;
+    border: none;
+}
+
+.navbar ul li:hover ul li {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.listed-item ul h2{
+    text-align: center;
+    padding: 6px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ab183d;
+}
+
+.listed-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.listed-item ul{
+    width: 20pc;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid red;
+    margin: 20px 10px;
+}
+
+.listed-item ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(223, 215, 215);
+}
+
+.div1 {
+    width: 25%;
+}
+
+.follow {
+    display: flex;
+    position: relative;
+    top: 60%;
+    left: -20%;
+}
+
+.follow a:hover {
+    color: red;
+}
+
+.follow ul {
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+.follow ul li {
+    list-style: none;
+}
+
+.follow ul li a {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #262626;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.follow ul li span {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+/* up down hovering */
+
+.follow ul li a span:nth-child(1), footer ul li a span:nth-child(3) {
+    width: 100%;
+    height: 1px;
+    background: #262626;
+}
+
+.follow ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.follow ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.follow ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.follow ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+/* left rigth hovering */
+
+.follow ul li a span:nth-child(2), footer ul li a span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    background: #262626;
+}
+
+.follow ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaley(0);
+    transform-origin: bottom;
+}
+
+.follow ul li a:hover span:nth-child(2) {
+    transform: scaley(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.follow ul li a span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    transform: scaley(0);
+    transform-origin: top;
+}
+
+.follow ul li a:hover span:nth-child(4) {
+    transform: scaley(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+footer .div2 {
+    font-size: 12px;
+    width: 25%;
+}
+
+footer .div2 ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .div2 ul li a {
+    color: rgb(17, 16, 16);
+    padding: 2px;
+}
+
+.div3 {
+    font-family: 'Roboto Slab', serif;
+    width: 30%;
+}
+
+.div3 ul {
+    padding-top: 10px;
+}
+
+.div3 ul li {
+    font-size: 14px;
+    color: black;
+    list-style: none;
+}
+
+footer {
+    padding: 30px;
+}
